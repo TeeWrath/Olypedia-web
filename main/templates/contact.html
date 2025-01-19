@@ -3,6 +3,77 @@
     <title>Contact Page</title>
 {% endblock  %}
 
-{% block contant %}
-    <h1>Contact Page</h1>
+{% block contant %}  <!-- Header Section -->
+<section style="padding: 50px 0; text-align: center; background-color: #6c4a4a; color: #fff;">
+    <div style="width: 90%; max-width: 1200px; margin: 0 auto;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Want to connect with our experts?</h1>
+        <p style="font-size: 1rem;">Please contact us with any of your queries or problems, our team of experts will be happy to guide you.</p>
+    </div>
+</section>
+
+<!-- Contact Information Section -->
+<section style="margin-top: 30px;">
+    <div style="width: 90%; max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px;">
+        <div style="flex: 1; min-width: 300px;">
+            <h5 style="font-size: 1.2rem; margin-bottom: 10px; color: #6c4a4a;">General</h5>
+            <p style="font-size: 0.9rem; color: #555; margin-bottom: 5px;">For quick assistance</p>
+            <p style="font-size: 0.9rem; color: #007bff;"><a href="mailto:info@writex.co.in" style="text-decoration: none; color: inherit;">info@writex.co.in</a></p>
+        </div>
+        <div style="flex: 1; min-width: 300px;">
+            <h5 style="font-size: 1.2rem; margin-bottom: 10px; color: #6c4a4a;">Customer Support</h5>
+            <p style="font-size: 0.9rem; color: #555; margin-bottom: 5px;">Have any query about your ongoing project with us? Get in touch now</p>
+            <p style="font-size: 0.9rem; color: #007bff;"><a href="mailto:customer@writex.co.in" style="text-decoration: none; color: inherit;">customer@writex.co.in</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Illustration Section -->
+<section style="text-align: center; margin: 30px 0;">
+    <img src="illustration.png" alt="Customer Support Illustration" style="max-width: 300px; height: auto;">
+</section>
+
+<!-- Additional Information Section -->
+<section style="text-align: center; margin: 30px 0;">
+    <div style="width: 90%; max-width: 1200px; margin: 0 auto;">
+        <p style="font-size: 0.9rem; color: #555;"><strong>Address</strong>: 6/8 Kalicharan Ghosh Road, Kolkata-700 050</p>
+        <p style="font-size: 0.9rem; color: #007bff;"><a href="#" style="text-decoration: none; color: inherit;">Get directions</a></p>
+        <p style="font-size: 0.9rem; color: #555;"><strong>Work Hours</strong>: Mon-Thu: 9:00-4:00 | Fri-Sat: 9:00-3:00 | Sun: Closed</p>
+        <p style="font-size: 0.9rem; color: #555;"><strong>Phone</strong>: +91 70038 82237</p>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section style="background-color: #fff; padding: 50px 0;">
+    <div style="width: 90%; max-width: 1200px; margin: 0 auto;">
+        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 20px; color: #6c4a4a;">We’re Here To Help</h2>
+        <p style="text-align: center; color: #555; margin-bottom: 40px;">At Olypedia, our team is committed to providing you with the support you need at every step. Whether you have questions, need assistance, or want to discuss your project requirements, we are here to ensure a seamless and satisfying experience.</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+            <div style="flex: 1; min-width: 200px; text-align: center;">
+                <p style="font-weight: bold; color: #6c4a4a;">Office</p>
+                <p>Kalyani, Nadia, West Bengal, India</p>
+            </div>
+            <div style="flex: 1; min-width: 200px; text-align: center;">
+                <p style="font-weight: bold; color: #6c4a4a;">Work Hours</p>
+                <p>Monday to Saturday: 10AM – 6PM</p>
+            </div>
+            <div style="flex: 1; min-width: 200px; text-align: center;">
+                <p style="font-weight: bold; color: #6c4a4a;">Call Us</p>
+                <p>(+91) 73807 10094</p>
+            </div>
+            <div style="flex: 1; min-width: 200px; text-align: center;">
+                <p style="font-weight: bold; color: #6c4a4a;">Email Us</p>
+                <p><a href="mailto:olypediaeducation54@gmail.com" style="text-decoration: none; color: inherit;">olypediaeducation54@gmail.com</a></p>
+            </div>
+        </div>
+        <form style="margin-top: 40px; background-color: #f9f4eb; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+                <input type="text" placeholder="Name" style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                <input type="email" placeholder="Email" style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+            <input type="text" placeholder="Subject" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 20px;">
+            <textarea placeholder="Message" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; height: 100px; margin-bottom: 20px;"></textarea>
+            <button type="submit" style="background-color: #6c4a4a; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
+        </form>
+    </div>
+</section>
 {% endblock  %}
