@@ -1,0 +1,116 @@
+.section{
+    padding: 20px;
+}
+
+.btn-primary{
+    background-color: #0a0a0a;
+    color: white;
+    height:50px;
+    width: 200px;
+    border: none;
+    border-radius:25px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 2px;
+}
+.btn-primary:hover{
+    background-color: #935f5f;
+}
+.success {
+    background-color: #672424;
+    color: white;
+    border: none;
+    border-radius:3px;
+    font-weight: bold;
+}
+.success:hover{
+    color: white;
+    background-color: #672424;
+}
+label {
+    font-weight: bold;
+}
+btn-outline-primary {
+    color: #333333;
+    border-color: #333333;
+}
+
+.btn-outline-primary:hover {
+    background-color: #333333;
+    color: white;
+}
+.form-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text{
+    color: #935f5f;
+    font-size: 3.5rem;
+    font-weight:bolder;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 25px;
+    background-color: #fff;
+  }
+  .illustration img {
+    max-width: 100%;
+    height: auto;
+  }
+  .content {
+    width: 100%;
+    max-width: 600px;
+    padding: 80px;
+  }
+  
+  .content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #8a2b2b;
+  }
+  .content p {
+    margin-top:30px;
+    font-size:medium;
+    color: #6c757d;
+    line-height: 1.6;
+  }
+  .btn-custom {
+    background-color:white;
+    color: #0d0c0c;
+    border:solid;
+    border-width: 1px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+  .btn-custom:hover {
+    background-color: #150202;
+    color: #fff;
+  }
+
+  .how_it_work{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+  }
+  .div-1,.div-2,.div-3{
+    display: flex;
+    background-color: #672424;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    height:600px;
+  }
+  .card1,.card2,.card3{
+    border: solid;
+    height: 90%;
+    width: 25%;
+    background-color: white;
+  }
