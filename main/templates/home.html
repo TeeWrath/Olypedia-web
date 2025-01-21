@@ -17,7 +17,7 @@
 
         <div class="col-md-6">
             <div class="form-section">
-                <h5>GET EXPERT HELP FOR YOUR PROJECT</h5>
+                <h4>GET EXPERT HELP FOR YOUR PROJECT</h4>
                 <form>
                     <div class="mb-3">
                         <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
@@ -58,7 +58,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 text-center illustration">
-          <img src="https://undraw.co/illustrations" alt="Illustration" class="img-fluid">
+          <img src="{%static 'images/Logo.png'%}" alt="Illustration" class="img-fluid">
         </div>
         <div class="col-md-6 content ">
           <h2>Our Content Writing Services</h2>
@@ -71,22 +71,61 @@
   </section>
 
 <section class="how-it-work">
+    <div class="div-head">
+        <div>
+            <h1>INDUSTRIES WE WORK WITH</h1>
+        </div>
+    </div>
     <div class="div-1">
-        <div class="card1">rk</div>
-        <div class="card2">ehg</div>
-        <div class="card3">mhj</div>
+        <div class="div1">
+            <div class="card1"></div>
+            <div class="card2"></div>
+             <div class="card3"></div>
+        </div>
     </div>
     <div class="div-2">
-        <div class="card1">webd</div>
-        <div class="card2">ehdb</div>
-        <div class="card3">kr</div>
+        <div class="div2">
+            <div class="card1"></div>
+            <div class="card2"></div>
+             <div class="card3"></div>
+        </div>
         
     </div>
     <div class="div-3">
-        <div class="card1">kjerg</div>
-        <div class="card2">4r</div>
-        <div class="card3">rgfui</div>
+        <div class="div2">
+            <div class="card1"></div>
+            <div class="card2"></div>
+             <div class="card3"></div>
+        </div>
+    </div>
+    <div class="project-discussion">
+        <h2>Want to Discuss About Your Project</h2>
+        <p>Get on a free call with our experts</p>
+        <button class="contact-button">Contact Now</button>
+      </div>          
     </div>
 </section>
+
+<div class="why-writex">
+    <h3>Why WriteX</h3>
+    <h1>Flexible writing solutions at one place</h1>
+    <p>
+      We understand that our clients have unique needs and we take the time to listen to their requirements. 
+      Our team of experienced writers has the skills and expertise to deliver writing that is engaging, 
+      informative, and meets the highest standards of quality. At WriteX we do not just conduct research with 
+      any random data for every research; we do primary as well as secondary data collection techniques. We are 
+      committed to providing excellent customer service and ensuring that our clients are satisfied with our 
+      work. With our dedication to excellence and focus on meeting our clients' needs, we are confident that we 
+      are the best choice for all your writing needs.
+    </p>
+    <ul>
+      <li>✔ Experienced Researchers</li>
+      <li>✔ Creativity</li>
+      <li>✔ Research Based Content</li>
+      <li>✔ Innovation</li>
+    </ul>
+    <a href="{%url 'about'%}"><button class="know-more">Know more</button></a>
+  </div>
+  
   {% endblock  %}
 
