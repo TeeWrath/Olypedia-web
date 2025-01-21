@@ -1,32 +1,22 @@
 {% extends 'layout.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'home.css'%}">
+{% endblock  %}
 {% block title %}
     <title>Home Page</title>
 {% endblock  %}
 
 {% block contant %}
-<div class="container main-section" style="padding: 50px;">
+<div class="container section">
     <div class="row align-items-center">
         <div class="col-md-6">
-            <h1 class="hero-text" style="color: #935f5f;
-            font-size: 2.5rem;
-            font-weight: bold;">Research based writing company</h1>
-            <button class="btn btn-primary mt-4">Start Your Project</button>
+            <h1 class="hero-text" >Research based writing company</h1>
+            <button class="btn btn-primary mt-5">Start Your Project</button>
         </div>
 
         <div class="col-md-6">
-            <div class="form-section" style="
-            background-color: white;
-            padding: 30px;
-.form-section {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        ">
+            <div class="form-section">
                 <h5>GET EXPERT HELP FOR YOUR PROJECT</h5>
                 <form>
                     <div class="mb-3">
@@ -57,13 +47,46 @@
                         <input type="number" class="form-control" id="wordCount" placeholder="Number of words">
                     </div>
 
-                    <button style= ":hover{
-    background-color: #555555;
-}" type="submit" class="btn btn-primary w-100">Get Free Quote</button>
+                    <button type="submit" class="btn success">Get Free Quote</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
-{% endblock  %}
+
+<section class="about-us">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center illustration">
+          <img src="https://undraw.co/illustrations" alt="Illustration" class="img-fluid">
+        </div>
+        <div class="col-md-6 content ">
+          <h2>Our Content Writing Services</h2>
+          <p>At Olypedia, we specialize in crafting compelling and original content that engages your audience. From blog posts to website copy, our writers ensure every word reflects your brand's message and tone.<br><br>We take a research-driven approach to deliver content that's not only creative but also informative and relevant. Our team is committed to helping you stand out with quality writing that adds value to your business.<br><br>Whether you need content for digital marketing, SEO, or brand storytelling, we tailor our services to meet your specific goals. Let us help you communicate effectively and grow your online presence.
+          </p>
+          <a href="{%url 'services'%}" class="btn btn-custom">View All Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="how-it-work">
+    <div class="div-1">
+        <div class="card1">rk</div>
+        <div class="card2">ehg</div>
+        <div class="card3">mhj</div>
+    </div>
+    <div class="div-2">
+        <div class="card1">webd</div>
+        <div class="card2">ehdb</div>
+        <div class="card3">kr</div>
+        
+    </div>
+    <div class="div-3">
+        <div class="card1">kjerg</div>
+        <div class="card2">4r</div>
+        <div class="card3">rgfui</div>
+    </div>
+</section>
+  {% endblock  %}
 
