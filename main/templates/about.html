@@ -1,8 +1,76 @@
 {% extends 'layout.html' %}
 {% block title %}
     <title>About Page</title>
-{% endblock  %}
+{% endblock %}
 
 {% block contant %}
-    <h1>About Page</h1>
-{% endblock  %}
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6;background-color: white;">
+    <section style="background-color: white;">
+        <h3 style="font-size: 1.0rem; color: #0e0e0e; text-align: center; margin-top: 3%;">ABOUT US</h3>
+            <h1 style="color: #965d62; text-align: center; font-weight: bolder; margin-top: 1%; font-size: 2.5rem;">Our HISTORY will become</h1>
+            <h1 style="color: #965d62; text-align: center; font-weight: bolder; font-size: 2.5rem; margin-top: -15px;">Our LEGACY forever</h1>
+
+    </section>
+    
+      
+    <!-- About Section -->
+    <section style="display: flex; justify-content: center; align-items: center; margin: 20px auto; max-width: 1200px; padding: 0 20px;margin-top: 5%;background-color: white;">
+          <!-- Image on the Left -->
+        <div style="flex: 1; text-align: center;">
+            <img src="/home/zayd/Desktop/web-proj/Olypedia-web/main/static/We Are Amazing Content Writers" alt="About Image" style="max-width: 100%; height: auto; border-radius: 10px;">
+        </div>
+        <!-- Text on the Right -->
+        <div style="flex: 1; padding-left: 20px;">
+            
+            <p style="margin-top: 10px; color: #000000; font-weight: bold;font-size: 2rem;">We Are Amazing Content Writers.</p>
+            <p style="margin-top: 15px; color: #555;">
+                At Olypedia, we take pride in being exceptional content writers dedicated to producing high-quality, engaging material. Our diverse team brings expertise across various topics and industries, ensuring that every piece resonates with your audience.
+                
+                We emphasize collaboration and thorough research, allowing us to create tailored content that effectively communicates your message and meets your business goals. We understand the importance of aligning your content strategy with your overall vision.
+                
+                Whether you need blog posts, articles, or product descriptions, you can count on us for outstanding results. We are committed to delivering content that not only informs but also elevates your brand and drives engagement.</p>
+        </div>
+    </section>
+    <div style="background-color:  #f9f4eb; text-align: center; padding: 2% 6%;">
+        <h3 style="font-weight: bolder; margin-top: 4%;font-size: 2rem;">Mission</h3>
+        <h3 style="margin: 0 auto; max-width: 900px; line-height: 1.5; word-wrap: break-word;font-size: 2.2rem;">
+            "With a focus on excellence, innovation, and customer satisfaction, we strive 
+            to exceed the expectations of our clients."
+        </h3>
+        <br>
+        <hr style="width: 900px; margin: 20px auto; border: 0; border-top: 2px solid #000000;">
+        <h3 style="font-weight: bolder; margin-top: 4%;font-size: 2rem;">Vision</h3>
+        <h3 style="margin: 0 auto; max-width: 900px; line-height: 1.5;font-size: 2.2rem;">
+            "To create sustainable business with a constant focus on growth and expansion."
+        </h3>
+        <hr style="width: 900px; margin: 20px auto; border: 0; border-top: 2px solid #000000;">
+    </div>
+    <div>
+        <h1 style="color: #965d62; text-align: center; font-weight: bolder; margin-top: 1%; font-size: 2.5rem;">What we deliver</h1>
+    </div>
+    
+    
+
+    <!-- Responsive Design -->
+    <style>
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+                text-align: center;
+            }
+            div {
+                flex: 1;
+                padding: 0;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            img {
+                max-width: 80%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+
+</body>
+{% endblock %}
