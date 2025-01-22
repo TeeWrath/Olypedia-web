@@ -9,19 +9,22 @@
     {% block title %}
     <title>Document</title>
     {% endblock %} 
+    {% block link %}
+        
+    {% endblock  %}
 </head>
 <body>
     {% block header %}
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light header m-5">
       <div class="container">
           <a class="navbar-brand" href="#">
-              <img src="path-to-your-logo.png" alt="WriteX Logo">
+              <img src="{%static 'images/Logo.png'%}" alt="WriteX Logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse navbarNav">
               <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
           <p><a class="text-dark nav-link active " aria-current="page" href="{% url 'home'%}">Home</a></p>
@@ -44,7 +47,9 @@
           <a class="text-dark nav-link" href="{% url  'project'%}">start a project</a>
         </li>
         <li class="nav-item">
-          <a class="text-dark nav-link" aria-disabled="true" href="{% url 'contact'%}">Contact us</a>
+          <a class="text-dark nav-link" aria-disabled="true" href="{% url 'contact'%}">
+            <button class="btn contact">Contact us</button>
+          </a>
         </li>
                 
               </ul>
@@ -58,7 +63,7 @@
 
     {% block footer %}
     <footer>
-      <div class="container">
+      <div class="container w">
           <div class="row">
               <div class="col-md-3 footer-section">
                   <div class="footer-logo">

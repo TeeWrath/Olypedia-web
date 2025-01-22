@@ -1,0 +1,238 @@
+.section{
+    padding: 20px;
+}
+
+.btn-primary{
+    background-color: #0a0a0a;
+    color: white;
+    height:50px;
+    width: 200px;
+    border: none;
+    border-radius:25px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 2px;
+}
+.btn-primary:hover{
+    background-color: #935f5f;
+}
+.contact{
+    margin-top: -6px;
+    border-radius: 30px;
+}
+.contact:hover{
+  background-color: #f87a7a;
+}
+.success {
+    background-color: #672424;
+    color: white;
+    border: none;
+    border-radius:3px;
+    font-weight: bold;
+}
+.success:hover{
+    color: white;
+    background-color: #672424;
+}
+label {
+    font-weight: bold;
+}
+btn-outline-primary {
+    color: #333333;
+    border-color: #333333;
+}
+
+.btn-outline-primary:hover {
+    background-color: #333333;
+    color: white;
+}
+.form-section {
+    background-color: #f9f4eb;
+    padding: 30px;
+}
+.form-section h4{
+  font-weight: bold;
+}
+.form-label,.form-control{
+  height:45px;
+}
+.hero-text{
+    color: #935f5f;
+    font-size: 3.5rem;
+    font-weight:bolder;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 25px;
+    background-color: #fff;
+  }
+  .illustration img {
+    max-width: 100%;
+    height: auto;
+  }
+  .content {
+    width: 100%;
+    max-width: 600px;
+    padding: 80px;
+  }
+  
+  .content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #8a2b2b;
+  }
+  .content p {
+    margin-top:30px;
+    font-size:medium;
+    color: #6c757d;
+    line-height: 1.6;
+  }
+  .btn-custom {
+    background-color:white;
+    color: #0d0c0c;
+    border:solid;
+    border-width: 1px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+  .btn-custom:hover {
+    background-color: #150202;
+    color: #fff;
+  }
+
+  .how_it_work{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+  }
+  .div-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:150px;
+  }
+  .div-head h1{
+    margin-top: 10px;
+    color: black;
+    font-weight: bolder;
+    font-size:60px;
+  }
+  .div-1,.div-2,.div-3{
+    display: flex;
+    background-color: #f9f4eb;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .div1,.div2,.div3{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height:500px;
+    width: 1200px;
+
+  }
+  .card1,.card2,.card3{
+    border-radius:15px;
+    height: 400px;
+    width: 350px;
+    background-color:rgb(254, 254, 254);
+  }
+  .project-discussion {
+    height: 300px;
+    margin-top: 50px;
+    text-align: center;
+    color: #333333; /* Dark gray text color */
+  }
+  
+  .project-discussion h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .project-discussion p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666666; 
+  }
+  
+  .contact-button {
+    font-size: 16px;
+    color: white;
+    background-color: #333333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #555555; 
+  }
+  
+  /* --css of why olypedia--*/
+  
+  .why-writex {
+    max-width: 1000px;
+    margin: auto;
+    height: 600px;
+    text-align: start;
+    color:black;
+  }
+  
+  .why-writex h3 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: #474646; 
+  }
+  
+  .why-writex h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: #9a2b1e; 
+  }
+  
+  .why-writex p {
+    font-size: 18px;
+    line-height: 1.75;
+    margin-bottom: 25px;
+  }
+  
+  .why-writex ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .why-writex ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .know-more {
+    font-size: 16px;
+    color: #333333;
+    background-color: transparent;
+    border: 2px solid #333333; /* Outlined button style */
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .know-more:hover {
+    background-color: #333333;
+    color: #ffffff;
+  }

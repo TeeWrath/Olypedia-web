@@ -2,39 +2,18 @@ body {
     background-color: #f9f4eb;
     font-family: Arial, sans-serif;
 }
-.btn-primary {
-    background-color: #333333;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #555555;
-}
-label {
-    font-weight: bold;
-}
-
 .navbar-brand img {
     height: 50px;
 }
-
+#navbarNav{
+    margin-left: 50px;
+}
 .navbar-nav .nav-link {
     color: #333333 !important;
 }
-
-.btn-outline-primary {
-    color: #333333;
-    border-color: #333333;
-}
-
-.btn-outline-primary:hover {
-    background-color: #333333;
-    color: white;
-}
-
 footer {
     background-color: #f4f4f4;
-    padding: 30px 0;
+    padding: 30px;
     color: #333333;
 }
 
