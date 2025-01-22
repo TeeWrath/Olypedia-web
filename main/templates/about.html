@@ -1,5 +1,8 @@
 {% extends 'layout.html' %}
 {% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'about.css'%}">
+{% endblock  %}
 {% block title %}
     <title>About Page</title>
 {% endblock %}
@@ -49,6 +52,67 @@
     <div>
         <h1 style="color: #965d62; text-align: center; font-weight: bolder; margin-top: 1%; font-size: 2.5rem;">What we deliver</h1>
     </div>
+    
+    <div class="card-grid">
+        <div class="card">
+          <img src="{%static 'images/about-project.jpg'%}" alt="Top Quality" class="card-image">
+          <h3>Top Quality</h3>
+          <p>Looking for the best writing service provider? Look no further! Our company offers top-quality writing services tailored to meet your needs.</p>
+        </div>
+        <div class="card">
+          <img src="customer-support.png" alt="24*7 Customer Support" class="card-image">
+          <h3>24*7 Customer Support</h3>
+          <p>At our company, we understand that customer support is key. That’s why we offer 24x7 support, so you can always reach us whenever you need assistance.</p>
+        </div>
+        <div class="card">
+          <img src="plagiarism-free.png" alt="100% Plagiarism Free" class="card-image">
+          <h3>100% Plagiarism Free</h3>
+          <p>WriteX takes pride in delivering 100% original and plagiarism-free content to our clients. You can trust us to provide high-quality, unique content for all your writing needs.</p>
+        </div>
+        <div class="card">
+          <img src="quick-response.png" alt="Quick Response" class="card-image">
+          <h3>Quick Response</h3>
+          <p>We guarantee quick and efficient responses to any issues or concerns you may have, ensuring a seamless experience with us.</p>
+        </div>
+        <div class="card">
+          <img src="transparency-reliability.png" alt="Transparency and Reliability" class="card-image">
+          <h3>Transparency and Reliability</h3>
+          <p>We strive to provide honest and trustworthy services, so you can have peace of mind knowing that you are working with a dependable partner.</p>
+        </div>
+        <div class="card">
+          <img src="cost-effective-pricing.png" alt="Cost-Effective Pricing" class="card-image">
+          <h3>Cost-Effective Pricing</h3>
+          <p>WriteX offers affordable services without compromising on quality, providing you with the best value for your money.</p>
+        </div>
+      </div>
+      <div style="margin: 4% 5%; text-align: center;">
+        <h3 style="margin: 0 auto; max-width: 1200px; line-height: 1.5; word-wrap: break-word;font-size: 1.1rem; color: #555;">
+            The journey started from level zero and now we comprise a team that resides in a vast network.
+             Nevertheless, sky’s the limit for us and we will continue this journey till we reach the epitome of success.
+              So please join and be a part of this glorious journey. We promise we won’t disappoint however be ready for precious surprises. We will deliver more than what you expect!
+        </h3>
+        <h3 style="color: #965d62; text-align: center; font-weight: bolder; margin-top: 2%; font-size: 2rem;">Let’s create memories of a lifetime.</h3>
+      </div>
+        <!-- Mission Section -->
+         <div style="text-align: center;">
+            <section class="mission">
+                <div class="mission-box">
+                  <h2>Our mission is your success</h2>
+                  <p>Team Writex</p>
+                </div>
+              </section>
+            
+              <!-- Banner Section -->
+              <section class="banner">
+                <div class="banner-content">
+                  <h1>Empowering Your Ideas with <br> Research-Driven Content</h1>
+                  <p>If you have any query in your mind, contact our expert for assistance</p>
+                  <a href="{%url 'contact'%}" class="btn">Contact Now</a>
+                </div>
+              </section>
+         </div>
+  
+
     
     
 
