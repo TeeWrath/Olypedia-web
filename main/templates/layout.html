@@ -15,47 +15,42 @@
 </head>
 <body>
     {% block header %}
-    <nav class="navbar navbar-expand-lg navbar-light header m-5">
-      <div class="container">
-          <a class="navbar-brand" href="#">
-              <img src="{%static 'images/Logo.png'%}" alt="WriteX Logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse navbarNav">
-              <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-          <p><a class="text-dark nav-link active " aria-current="page" href="{% url 'home'%}">Home</a></p>
-        </li>
-        <li class="nav-item">
-          <a class="text-dark nav-link" href="{% url 'about'%}">About</a>
-        </li>
-        <div class="dropdown">
+    <nav class="navbar">
+        <div class="logo">
+          <img src="{% static 'images/Logo.png'%}" alt="WRITEX Logo">
+        </div>
+        <ul class="nav-links">
+          <li><a href="{%url 'home'%}">Home</a></li>
+          <li><a href="{% url 'about'%}">About</a></li>
+          <div class="dropdown">
             <a class="text-dark nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Our Services
             </a>
-          
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </div>
-        <li class="nav-item">
-          <a class="text-dark nav-link" href="{% url  'project'%}">start a project</a>
-        </li>
-        <li class="nav-item">
-          <a class="text-dark nav-link" aria-disabled="true" href="{% url 'contact'%}">
-            <button class="btn contact">Contact us</button>
-          </a>
-        </li>
-                
-              </ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="{% url 'project'%}">Start a Project</a></li>
+          <div class="dropdown">
+            <a class="text-dark nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Free Tooles
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </div>
-      </div>
-  </nav>
+          <li><a href="#">Career</a></li>
+        </ul>
+        
+        <div class="contact-us">
+          <a href="{% url 'contact'%}">Contact Us</a>
+        </div>
+      </nav>
     {% endblock  %}
     {% block contant %}
         <h1>Default Page</h1>
