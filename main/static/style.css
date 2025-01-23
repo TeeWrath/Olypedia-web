@@ -2,6 +2,7 @@ body {
     background-color: #f9f4eb;
     font-family: Arial, sans-serif;
 }
+
 .navbar-brand img {
     height: 50px;
 }
@@ -9,8 +10,21 @@ body {
     margin-left: 50px;
 }
 .navbar-nav .nav-link {
-    color: #333333 !important;
+    color: #333333 ;
+    
 }
+.navbar-nav {
+    align-items:center;
+}
+
+.navbar-nav > .nav-item > .nav-link:hover {
+    color: #965d62 !important; 
+}
+.navbar-nav .nav-link.active {
+    color: #965d62 !important; 
+}
+
+
 footer {
     background-color: #f4f4f4;
     padding: 30px;

@@ -15,9 +15,9 @@
 </head>
 <body>
     {% block header %}
-    <nav class="navbar navbar-expand-lg navbar-light header m-5">
+    <nav class="navbar navbar-expand-lg navbar-light header m-5 ">
       <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="{% url 'home'%}">
               <img src="{%static 'images/Logo.png'%}" alt="WriteX Logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -25,9 +25,9 @@
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse navbarNav">
-              <ul class="navbar-nav ms-auto">
+              <ul class="navbar-nav mx-auto d-flex gap-5">
                   <li class="nav-item">
-          <p><a class="text-dark nav-link active " aria-current="page" href="{% url 'home'%}">Home</a></p>
+          <a class="text-dark nav-link active " aria-current="page" href="{% url 'home'%}">Home</a>
         </li>
         <li class="nav-item">
           <a class="text-dark nav-link" href="{% url 'about'%}">About</a>
@@ -46,9 +46,9 @@
         <li class="nav-item">
           <a class="text-dark nav-link" href="{% url  'project'%}">start a project</a>
         </li>
-        <li class="nav-item">
-          <a class="text-dark nav-link" aria-disabled="true" href="{% url 'contact'%}">
-            <button class="btn contact">Contact us</button>
+        <li class="nav-item mx-5">
+          <a class="text-dark nav-link btn contact" aria-disabled="true" href="{% url 'contact'%}">
+            Contact us
           </a>
         </li>
                 
