@@ -15,3 +15,6 @@ def project(request):
 
 def services(request):
     return render(request,'services.html')
+
+def career(request):
+    return render(request,'career.html')
