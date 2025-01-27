@@ -1,0 +1,97 @@
+.body{
+    background-color:#ffffff;
+    max-height: 100vh;
+    max-width: 100vb;
+}
+.header-title {
+    color: #8B5D5D;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.header-subtitle {
+    color: #8B5D5D;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.header-description {
+    color: #666;
+    font-size: 1rem;
+}
+.start-project-btn {
+    background-color: #8B5D5D;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+}
+.process-title {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.process-step {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.process-step h3 {
+    font-size: 2rem;
+    color: #333;
+}
+.process-step p {
+    color: #666;
+    font-size: 1rem;
+}
+.divider {
+    border-top: 1px solid #ddd;
+    margin: 40px 0;
+}
+
+
+.form-part{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f8f9fa;
+}
+.container2 {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+}
+.dropzone {
+    border: 2px dashed #ced4da;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.dropzone h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #343a40;
+}
+.dropzone p {
+    font-size: 14px;
+    color: #6c757d;
+}
+.dropzone .file-count {
+    font-size: 12px;
+    color: #6c757d;
+    text-align: right;
+}
+.form-control {
+    margin-bottom: 20px;
+}
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    width: 100%;
+}

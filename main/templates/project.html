@@ -1,9 +1,120 @@
 {% extends 'layout.html' %}
+{% load static %}
 {% block title %}
     <title>Project Page</title>
 {% endblock  %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'project.css' %}">
+
+{% endblock  %}
 
 {% block contant %}
-    <h1>Sumbit your Project </h1>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h5 class="text-uppercase">Admission</h5>
+                <h2 class="header-title">Want to start?</h2>
+                <h2 class="header-subtitle">Meet our Expert</h2>
+                <p class="header-description">
+                    Thank you for your interest in Writex Services. We are glad to have you here. You can easily start your project with us by following easy simple steps mentioned below.
+                </p>
+                <button class="btn start-project-btn">
+                    <i class="fas fa-arrow-right"></i> Start Your Project
+                </button>
+            </div>
+        </div>
+        <div class="divider h-50 mt-5"></div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3 class="process-title">THE PROCESS</h3>
+            </div>
+            <div class="col-md-3">
+                <div class="process-step">
+                    <h3>01</h3>
+                    <p><strong>Submit Project Details</strong></p>
+                    <p>You need to submit all the details of your project in the desired format(PSD, Word XL)</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="process-step">
+                    <h3>02</h3>
+                    <p><strong>Get on a Call with Expert</strong></p>
+                    <p>We will assign you a expert based on your project topic and industry. Discuss every details with the expert</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="process-step">
+                    <h3>03</h3>
+                    <p><strong>Make the Payment</strong></p>
+                    <p>We will share the final invoice of the project based on the work. You can make the payment via multiple payment option.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="process-step">
+                    <h3>04</h3>
+                    <p><strong>Work Delivery</strong></p>
+                    <p>Your work will be delivered to you on the agreed time for your project. The expert will be in touch with you during the project.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+        <div class="form-part">
+         <div class="container2">
+          <div class="dropzone">
+           <h4>
+            Drag &amp; Drop Files Here
+           </h4>
+           <p>
+            or
+            <a href="#">
+             Browse Files
+            </a>
+           </p>
+           <div class="file-count">
+            0 of 10
+           </div>
+          </div>
+          <div class="text-center mb-3">
+           OR
+          </div>
+          <div class="mb-3">
+           <label class="form-label" for="projectDescription">
+            Project Description
+           </label>
+           <textarea class="form-control" id="projectDescription" rows="5"></textarea>
+          </div>
+          <div class="mb-3">
+           <label class="form-label" for="name">
+            Name*
+           </label>
+           <input class="form-control" id="name" type="text"/>
+          </div>
+          <div class="mb-3">
+           <label class="form-label" for="email">
+            Email*
+           </label>
+           <input class="form-control" id="email" type="email"/>
+          </div>
+          <div class="mb-3">
+           <label class="form-label" for="phone">
+            Phone
+           </label>
+           <div class="input-group">
+            <span class="input-group-text">
+             <img alt="Flag of the United States" height="20" src="https://storage.googleapis.com/a1aa/image/ykwGLxedagUuYiHUaoPDuiWQX1k0yMPd1l0wVhcgX0lufFJUA.jpg" width="20"/>
+            </span>
+            <input class="form-control" id="phone" placeholder="+1" type="text"/>
+           </div>
+          </div>
+          <button class="btn btn-submit" type="submit">
+           Submit
+          </button>
+         </div>
+        </div>
+</body>
+        
+           
 {% endblock  %}

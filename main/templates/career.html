@@ -1,0 +1,121 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'about.css'%}">
+{% endblock  %}
+{% block title %}
+    <title>Career Page</title>
+{% endblock %}
+
+{% block contant %}
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6;background-color:#ffffff;">
+    <section style="background-color: white;">
+        <h3 style="font-size: 1.0rem; color: #0e0e0e; text-align: center; margin-top: 3%;">ABOUT US</h3>
+            <h1 style="color: #965d62; text-align: center; font-weight: bolder; margin-top: 1%; font-size: 2.5rem;">Our HISTORY will become</h1>
+            <h1 style="color: #965d62; text-align: center; font-weight: bolder; font-size: 2.5rem; margin-top: -15px;">Our LEGACY forever</h1>
+
+    </section>
+    
+      
+    <!-- About Section -->
+    <section style="display: flex; justify-content: center; align-items: center; margin: 20px auto; max-width: 1200px; padding: 0 20px;margin-top: 5%;background-color: white;">
+          <!-- Image on the Left -->
+        <div style="flex: 1; text-align: center;">
+            <img src="{%static 'images/mobile-app.png'%}" alt="About Image" style="max-width: 100%; height: auto; border-radius: 10px;">
+        </div>
+        <!-- Text on the Right -->
+        <div style="flex: 1; padding-left: 20px;">
+            
+            <p style="margin-top: 10px; color: #000000; font-weight: bold;font-size: 2rem;">We Are Amazing Content Writers.</p>
+            <p style="margin-top: 15px; color: #555;">
+                At Olypedia, we take pride in being exceptional content writers dedicated to producing high-quality, engaging material. Our diverse team brings expertise across various topics and industries, ensuring that every piece resonates with your audience.
+                
+                We emphasize collaboration and thorough research, allowing us to create tailored content that effectively communicates your message and meets your business goals. We understand the importance of aligning your content strategy with your overall vision.
+                
+                Whether you need blog posts, articles, or product descriptions, you can count on us for outstanding results. We are committed to delivering content that not only informs but also elevates your brand and drives engagement.</p>
+        </div>
+    </section>
+    <div style="background-color:  #f9f4eb; text-align: center; padding: 2% 6%;">
+        <h3 style="font-weight: bolder; margin-top: 4%;font-size: 2rem;">Mission</h3>
+        <h3 style="margin: 0 auto; max-width: 900px; line-height: 1.5; word-wrap: break-word;font-size: 2.2rem;">
+            "With a focus on excellence, innovation, and customer satisfaction, we strive 
+            to exceed the expectations of our clients."
+        </h3>
+        <br>
+        <hr style="width: 900px; margin: 20px auto; border: 0; border-top: 2px solid #000000;">
+    </div>
+    <div>
+        <h1 style="color: #965d62; text-align: center; font-weight: bolder; margin-top: 1%; font-size: 2.5rem;">What we deliver</h1>
+    </div>
+    
+    <div class="card-grid">
+        <div class="card">
+          <img src="{%static 'images/about-project.jpg'%}" alt="Top Quality" class="card-image">
+          <h3>Top Quality</h3>
+          <p>Looking for the best writing service provider? Look no further! Our company offers top-quality writing services tailored to meet your needs.</p>
+        </div>
+        <div class="card">
+          <img src="customer-support.png" alt="24*7 Customer Support" class="card-image">
+          <h3>24*7 Customer Support</h3>
+          <p>At our company, we understand that customer support is key. That’s why we offer 24x7 support, so you can always reach us whenever you need assistance.</p>
+        </div>
+        <div class="card">
+          <img src="plagiarism-free.png" alt="100% Plagiarism Free" class="card-image">
+          <h3>100% Plagiarism Free</h3>
+          <p>WriteX takes pride in delivering 100% original and plagiarism-free content to our clients. You can trust us to provide high-quality, unique content for all your writing needs.</p>
+        </div>
+      </div>
+      <div style="margin: 4% 5%; text-align: center;">
+        <h3 style="margin: 0 auto; max-width: 1200px; line-height: 1.5; word-wrap: break-word;font-size: 1.1rem; color: #555;">
+            The journey started from level zero and now we comprise a team that resides in a vast network.
+             Nevertheless, sky’s the limit for us and we will continue this journey till we reach the epitome of success.
+              So please join and be a part of this glorious journey. We promise we won’t disappoint however be ready for precious surprises. We will deliver more than what you expect!
+        </h3>
+        <h3 style="color: #965d62; text-align: center; font-weight: bolder; margin-top: 2%; font-size: 2rem;">Let’s create memories of a lifetime.</h3>
+      </div>
+        <!-- Mission Section -->
+         <div style="text-align: center;">
+            <section class="mission">
+                <div class="mission-box">
+                  <h2>Our mission is your success</h2>
+                  <p>Team Writex</p>
+                </div>
+              </section>
+            
+              <!-- Banner Section -->
+              <section class="banner">
+                <div class="banner-content">
+                  <h1>Empowering Your Ideas with <br> Research-Driven Content</h1>
+                  <p>If you have any query in your mind, contact our expert for assistance</p>
+                  <a href="{%url 'contact'%}" class="btn">Contact Now</a>
+                </div>
+              </section>
+         </div>
+  
+
+    
+    
+
+    <!-- Responsive Design -->
+    <style>
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+                text-align: center;
+            }
+            div {
+                flex: 1;
+                padding: 0;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            img {
+                max-width: 80%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+
+</body>
+{% endblock %}
