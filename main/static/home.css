@@ -139,12 +139,43 @@ btn-outline-primary {
     width: 1200px;
 
   }
-  .card1,.card2,.card3{
+  .card{
     border-radius:15px;
-    height: 400px;
-    width: 350px;
+    height: 475px;
+    width: 357px;
     background-color:rgb(254, 254, 254);
+    display: flex;
+    padding: 20px;
+    justify-content:center;
+    align-items:start;
+    flex-direction: column;
+    row-gap:0.8rem;
   }
+
+  .card-image {
+    max-width: 80px;
+    margin: 0 auto 15px;
+    display: block;
+  }
+  
+  .card h4 {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+  }
+ .card button{
+  border-radius: 20px;
+  height: 60px;
+  width: 200px;
+  background-color:black;
+  color: white;
+ }
 
   .project-discussion {
     height: 300px;

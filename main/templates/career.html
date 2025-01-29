@@ -10,29 +10,25 @@
 {% block contant %}
 <body style="font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6;background-color:#ffffff;">
     <section style="background-color: white;">
-        <h3 style="font-size: 1.0rem; color: #0e0e0e; text-align: center; margin-top: 3%;">ABOUT US</h3>
-            <h1 style="color: #965d62; text-align: center; font-weight: bolder; margin-top: 1%; font-size: 2.5rem;">Our HISTORY will become</h1>
-            <h1 style="color: #965d62; text-align: center; font-weight: bolder; font-size: 2.5rem; margin-top: -15px;">Our LEGACY forever</h1>
-
+        <h3 style="font-size: 1.0rem; color: #0e0e0e; text-align: center; font-size:1rem; margin-top: 3%;">Career</h3>
+            <h1 style="color: #965d62; text-align: center; font-weight: bolder; margin-top: 1.2%; font-size: 3.5rem;">Work with us</h1>
     </section>
     
       
     <!-- About Section -->
     <section style="display: flex; justify-content: center; align-items: center; margin: 20px auto; max-width: 1200px; padding: 0 20px;margin-top: 5%;background-color: white;">
           <!-- Image on the Left -->
-        <div style="flex: 1; text-align: center;">
-            <img src="{%static 'images/mobile-app.png'%}" alt="About Image" style="max-width: 100%; height: auto; border-radius: 10px;">
+        <div style="flex: 1; text-align: center; padding:70px; margin:-30px 12px 0 0;">
+            <img src="{%static 'images/mobile-app.png'%}" alt="About Image" style="max-width: 100%; height: auto; border-radius: 30px; border:solid">
         </div>
         <!-- Text on the Right -->
-        <div style="flex: 1; padding-left: 20px;">
+        <div style="flex: 1; padding:20px;">
             
-            <p style="margin-top: 10px; color: #000000; font-weight: bold;font-size: 2rem;">We Are Amazing Content Writers.</p>
-            <p style="margin-top: 15px; color: #555;">
-                At Olypedia, we take pride in being exceptional content writers dedicated to producing high-quality, engaging material. Our diverse team brings expertise across various topics and industries, ensuring that every piece resonates with your audience.
-                
-                We emphasize collaboration and thorough research, allowing us to create tailored content that effectively communicates your message and meets your business goals. We understand the importance of aligning your content strategy with your overall vision.
-                
-                Whether you need blog posts, articles, or product descriptions, you can count on us for outstanding results. We are committed to delivering content that not only informs but also elevates your brand and drives engagement.</p>
+            <p style="margin-top: -50px; color: #000000; font-weight: bold;font-size: 2.2rem;">Join WriteX and craft your success story</p>
+            <p style="margin-top: 20px; color: #555;font-size: 1.2rem;">
+              At WriteX, we’re on a mission to transform ideas into compelling narratives and bring words to life. As a content writing company, we offer a vibrant and dynamic work environment, perfect for those who are passionate about storytelling and possess a way with words.</p>
+            <p style="margin-top: 20px; color: #555;font-size: 1.2rem;">Join our team and immerse yourself in a world of endless possibilities. Here, you’ll have the chance to craft captivating content that resonates with audiences across diverse industries.</p>
+            
         </div>
     </section>
     <div style="background-color:  #f9f4eb; text-align: center; padding: 2% 6%;">
@@ -44,10 +40,96 @@
         <br>
         <hr style="width: 900px; margin: 20px auto; border: 0; border-top: 2px solid #000000;">
     </div>
-    <div>
-        <h1 style="color: #965d62; text-align: center; font-weight: bolder; margin-top: 1%; font-size: 2.5rem;">What we deliver</h1>
+
+<!-- form section-->
+<div class="container">
+  <!-- Button -->
+  <button class="apply-btn">Apply Now</button>
+
+  <!-- Header -->
+  <div class="custom-header">
+      Application Form
+  </div>
+</div>
+
+
+<div class="container mt-3">
+  <div></div>
+  <form>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="firstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="First Name" style="height:45px">
+      </div>
+      <div class="col-md-6">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Last Name" style="height:45px">
+      </div>
     </div>
-    
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="phone" class="form-label" >Phone</label>
+        <input type="text" class="form-control" id="phone" placeholder="E.g. +91 8955887789" style="height:45px">
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="E.g. email@mail.com" style="height:45px">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-12">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" class="form-control" id="address" placeholder="E.g. 42 Wallaby Way" style="height:45px;width:100%">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="city" class="form-label" >City</label>
+        <input type="text" class="form-control" id="city" placeholder="E.g. Kolkata" style="height:45px;">
+      </div>
+      <div class="col-md-6">
+        <label for="qualification" class="form-label">Educational Qualifications</label>
+        <input type="text" class="form-control" id="qualification" placeholder="E.g. B.COM, BBA" style="height:45px;">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="jobPosition" class="form-label">Job Position</label>
+        <select class="form-select" id="jobPosition" style="height:45px">
+          <option selected>Senior Subject Matter Expert</option>
+          <option>Business Development Associate</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="experience" class="form-label">Fresher/Experienced</label>
+        <select class="form-select" id="experience" style="height:45px">
+          <option selected>Fresher</option>
+          <option>Experienced</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="resume" class="form-label">Upload Resume</label>
+      <input type="file" class="form-control" id="resume" style="height:45px;border:none;">
+    </div>
+
+    <div>
+      <button type="submit" style="background-color:#965d62;height:40px;width:90px;padding:5px;border:none;">Submit</button>
+    </div>
+  </form>
+</div>
+
+<!--card-->
+<div>
+  <h1 style="color: #965d62; text-align: center; font-weight: bolder; margin:2% 0 2% 0; font-size: 2.7rem;">
+    Why work at WriteX
+    </h1>
+</div>
     <div class="card-grid">
         <div class="card">
           <img src="{%static 'images/about-project.jpg'%}" alt="Top Quality" class="card-image">
@@ -67,18 +149,16 @@
       </div>
       <div style="margin: 4% 5%; text-align: center;">
         <h3 style="margin: 0 auto; max-width: 1200px; line-height: 1.5; word-wrap: break-word;font-size: 1.1rem; color: #555;">
-            The journey started from level zero and now we comprise a team that resides in a vast network.
-             Nevertheless, sky’s the limit for us and we will continue this journey till we reach the epitome of success.
-              So please join and be a part of this glorious journey. We promise we won’t disappoint however be ready for precious surprises. We will deliver more than what you expect!
+          The journey started from level zero and now we comprise a team that resides in a vast network. Nevertheless, sky’s the limit for us and we will continue this journey till we reach the epitome of success. So please join and be a part of this glorious journey. We promise we won’t disappoint however be ready for precious surprises. We will deliver more than what you expect!
         </h3>
-        <h3 style="color: #965d62; text-align: center; font-weight: bolder; margin-top: 2%; font-size: 2rem;">Let’s create memories of a lifetime.</h3>
       </div>
         <!-- Mission Section -->
          <div style="text-align: center;">
             <section class="mission">
                 <div class="mission-box">
-                  <h2>Our mission is your success</h2>
+                  <h2>Let’s create success together</h2>
                   <p>Team Writex</p>
+                  <a href=""><button style="color: #f9f4eb;background:rgb(30, 30, 30);font-weight: bold;font-size:1.2rem; height: 60px; width:180px;border-radius: 30px;">Contact HR</button></a>
                 </div>
               </section>
             
@@ -119,3 +199,20 @@
 
 </body>
 {% endblock %}
+
+{% block script %}
+<script>// Get the button and the div element
+  const showButton = document.getElementById('showButton');
+  const dataDiv = document.getElementById('dataDiv');
+  
+  // Add an event listener to the button
+  showButton.addEventListener('click', function() {
+      // Toggle the display property of the div
+      if (dataDiv.style.display === "none") {
+          dataDiv.style.display = "block"; // Show the div
+      } else {
+          dataDiv.style.display = "none"; // Hide the div
+      }
+  });
+  </script>
+{% endblock script %}
