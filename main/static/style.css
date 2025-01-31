@@ -9,6 +9,15 @@ body {
     justify-content:space-evenly;
     align-items: center;
     padding: 30px;
+    
+  }
+
+  .default-header{
+    background-color: white;
+  }
+
+  .home-header{
+    background-color: #f9f4eb;
   }
   
   .logo img {
