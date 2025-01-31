@@ -5,6 +5,7 @@
 {% endblock  %}
 {% block link %}
 <link rel="stylesheet" href="{% static 'project.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 {% endblock  %}
 
@@ -14,14 +15,15 @@
         <div class="row">
             <div class="col-md-8">
                 <h5 class="text-uppercase">Admission</h5>
-                <h2 class="header-title">Want to start?</h2>
-                <h2 class="header-subtitle">Meet our Expert</h2>
+                <h1 class="header-title" style="font-size: 4rem;">Want to start?</h1>
+                <h1 class="header-subtitle" style="margin-top: -2%;font-size: 4rem;">Meet our Expert</h1>
                 <p class="header-description">
                     Thank you for your interest in Writex Services. We are glad to have you here. You can easily start your project with us by following easy simple steps mentioned below.
                 </p>
-                <button class="btn start-project-btn">
-                    <i class="fas fa-arrow-right"></i> Start Your Project
-                </button>
+                <a href="#" class="project-button">
+                    <span class="icon"><i class="fas fa-sign-in-alt"></i></span>
+                    <span class="text">Start Your Project</span>
+                </a>
             </div>
         </div>
         <div class="divider h-50 mt-5"></div>
