@@ -44,10 +44,18 @@
 <div class="form-section" style="display: flex;flex-direction: column;background-color: #fff;justify-content: center;align-items: center;width:100vw;">
   <div style="margin-top:5px;height:60px;width:50%;font-weight:bold;font-size:1.9rem;display:flex;justify-content:center;align-items: center;">JOB POSITION</div>
   <div style="display: flex;flex-direction:row;background-color: #fff;justify-content: center;align-items: center;width:100vw;">
-    <div class="application" style=" height:60px;width:25%;display:flex;background-color:#f1f1f1;color:black;margin:15px 0 6px 0;padding:15px;justify-content:center;align-items: center;">
+    <div 
+    onmouseover="this.style.color='white';this.style.backgroundColor='black'"
+    onmouseout="this.style.color='black';this.style.backgroundColor='#f1f1f1'"
+
+    style=" height:60px;width:25%;display:flex;background-color:#f1f1f1;color:black;margin:15px 0 6px 0;padding:15px;justify-content:center;align-items: center;">
       Senior Subject Matter Expert
     </div> 
-    <div class="application" style=" height:60px;width:25%;display:flex;background-color:#f1f1f1;color:black;margin:15px 0 6px 0;padding:15px;justify-content:center;align-items: center;">
+    <div 
+    onmouseover="this.style.color='white';this.style.backgroundColor='black'"
+    onmouseout="this.style.color='black';this.style.backgroundColor='#f1f1f1'"
+
+    class="application" style=" height:60px;width:25%;display:flex;background-color:#f1f1f1;color:black;margin:15px 0 6px 0;padding:15px;justify-content:center;align-items: center;">
       Business Development Associate (BDA)
     </div> 
   </div>
@@ -55,7 +63,14 @@
 </div>
 
 <div class="form-section" style="display: flex;flex-direction: column;background-color: #fff;justify-content: center;align-items: center;width:100vw;">
-  <div style="margin-top:20px"><button style="height:60px;width:210px;border-radius:50px;border:none;color:white;font-weight:bolder;background-color:black;font-size:1.8rem;">Apply Now</button></div>
+  <div style="margin-top:20px">
+    <button 
+    onmouseover="this.style.color='white';this.style.backgroundColor='#965d62'"
+    onmouseout="this.style.color='white';this.style.backgroundColor='black'" 
+    style="height:60px;width:210px;border-radius:50px;border:none;color:white;font-weight:bolder;background-color:black;font-size:1.8rem;">
+    Apply Now
+  </button>
+  </div>
   <div class="application" style=" height:60px;width:71%;display:flex;background-color:#965d62;color:white;font-size:2.2rem;font-weight:bolder;margin:15px 0 30px 0;padding:15px;justify-content:center;align-items: center;">
     Application Form
   </div> 
@@ -123,7 +138,7 @@
 
     <div class="mb-3">
       <label for="resume" class="form-label">Upload Resume</label>
-      <input type="file" class="form-control" id="resume" style="height:45px;border:none;">
+      <input type="file" class="form-control" id="resume" style="border:none;border-radius:0;">
     </div>
 
     <div>
@@ -166,7 +181,11 @@
                 <div class="mission-box">
                   <h2>Let’s create success together</h2>
                   <p>Team Writex</p>
-                  <a href=""><button class="hr" style="color: #f9f4eb;background:rgb(30, 30, 30);font-weight: bold;font-size:1.2rem; height: 50px; width:160px;border-radius: 30px;"
+                  <a href="mailto:someone@example.com">
+                    <button
+                    onmouseover="this.style.color='white';this.style.backgroundColor='#965d62'"
+                    onmouseout="this.style.color='#f9f4eb';this.style.backgroundColor='rgb(30, 30, 30)'"
+                    style="color: #f9f4eb;background:rgb(30, 30, 30);font-weight: bold;font-size:1.2rem; height: 50px; width:160px;border-radius: 30px;"
                     >Contact HR</button></a>
                 </div>
               </section>
@@ -179,52 +198,47 @@
                   line-height: 1.3;
                   margin-bottom: 20px;">Empowering Your Ideas with <br> Research-Driven Content</h1>
                   <p>If you have any query in your mind, contact our expert for assistance</p>
-                  <a href="{%url 'contact'%}"><button class="btn">Contact Now</button></a>
+                  <a href="{%url 'contact'%}">
+                    <button 
+                    onmouseover="this.style.color='black';this.style.backgroundColor='white'"
+                    onmouseout="this.style.color='white';this.style.backgroundColor='#965d62'" 
+                    class="btn"
+                    style="height:60px;width:200px;font-weight:bold;border-radius:50px;"
+                    >Contact Now</button></a>
                 </div>
               </section>
          </div>
   
-
+    <!-- whatsapp -->
+    <a 
+    href="#" 
+    style="position: fixed; 
+      bottom: 20px; 
+      right: 20px; 
+      background-color: #25d366; 
+      color: white; 
+      font-family: Arial, sans-serif; 
+      font-size: 16px; 
+      font-weight: 500; 
+      padding: 10px 20px; 
+      border-radius: 25px; 
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+      display: flex; 
+      align-items: center; 
+      cursor: pointer; 
+      text-decoration: none;"
+  >
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+      alt="WhatsApp Icon" 
+      style="width: 20px; height: 20px; margin-right: 10px;"
+    >
+    Hi, how can We help?
+  </a>
     
-    
-
-    <!-- Responsive Design -->
-    <style>
-        @media (max-width: 768px) {
-            section {
-                flex-direction: column;
-                text-align: center;
-            }
-            div {
-                flex: 1;
-                padding: 0;
-            }
-            h1 {
-                font-size: 1.5rem;
-            }
-            img {
-                max-width: 80%;
-                margin: 0 auto;
-            }
-        }
-    </style>
-
 </body>
 {% endblock %}
 
 {% block script %}
-<script>// Get the button and the div element
-  const showButton = document.getElementById('showButton');
-  const dataDiv = document.getElementById('dataDiv');
-  
-  // Add an event listener to the button
-  showButton.addEventListener('click', function() {
-      // Toggle the display property of the div
-      if (dataDiv.style.display === "none") {
-          dataDiv.style.display = "block"; // Show the div
-      } else {
-          dataDiv.style.display = "none"; // Hide the div
-      }
-  });
-  </script>
+
 {% endblock script %}
