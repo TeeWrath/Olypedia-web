@@ -18,3 +18,6 @@ def services(request):
 
 def career(request):
     return render(request,'career.html')
+
+def market(request):
+    return render(request,'market.html')
