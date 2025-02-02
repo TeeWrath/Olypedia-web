@@ -9,4 +9,10 @@ urlpatterns = [
     path('project/', views.project,name='project'),
     path('career/', views.career,name='career'),
     path('market/', views.market,name='market'),
+    path('education/', views.education,name='education'),
+    path('health/', views.health,name='health'),
+    path('entertainment/', views.entertainment,name='entertainment'),
+    path('legal/', views.legal,name='legal'),
+    path('corporate/', views.corporate,name='corporate'),
+    path('finance/', views.finance,name='finance'),
 ]

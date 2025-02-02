@@ -21,3 +21,22 @@ def career(request):
 
 def market(request):
     return render(request,'market.html')
+
+def education(request):
+    return render(request,'education.html')
+
+def health(request):
+    return render(request,'health.html')
+
+def entertainment(request):
+    return render(request,'entertainment.html')
+
+def legal(request):
+    return render(request,'legal.html')
+
+def corporate(request):
+    return render(request,'corporate.html')
+
+def finance(request):
+    return render(request,'finance.html')
+
