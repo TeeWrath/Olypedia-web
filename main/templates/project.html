@@ -1,149 +1,187 @@
-{% extends 'layout.html' %}
-{% load static %}
-{% block title %}
-    <title>Project Page</title>
-{% endblock  %}
-{% block link %}
-<link rel="stylesheet" href="{% static 'project.css' %}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+{% extends 'layout.html' %} {% load static %} {% block title %}
+<title>Project Page</title>
+{% endblock %} {% block link %}
+<link rel="stylesheet" href="{% static 'project.css' %}" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
 
-{% endblock  %}
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+/>
 
-{% block contant %}
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6;background-color:#ffffff;">
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-8">
-                <h5 class="text-uppercase">Admission</h5>
-                <h1 class="header-title" style="font-size: 4rem;">Want to start?</h1>
-                <h1 class="header-subtitle" style="margin-top: -2%;font-size: 4rem;">Meet our Expert</h1>
-                <p class="header-description">
-                    Thank you for your interest in Writex Services. We are glad to have you here. You can easily start your project with us by following easy simple steps mentioned below.
-                </p>
-                <a href="#" class="project-button">
-                    <span class="icon"><i class="fas fa-sign-in-alt"></i></span>
-                    <span class="text">Start Your Project</span>
-                </a>
-            </div>
-        </div>
-        <div class="divider h-50 mt-5"></div>
-        <div class="row mt-5">
-            <div class="col-md-12">
-                <h3 class="process-title">THE PROCESS</h3>
-            </div>
-            <div class="col-md-3">
-                <div class="process-step">
-                    <h3>01</h3>
-                    <p><strong>Submit Project Details</strong></p>
-                    <p>You need to submit all the details of your project in the desired format(PSD, Word XL)</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="process-step">
-                    <h3>02</h3>
-                    <p><strong>Get on a Call with Expert</strong></p>
-                    <p>We will assign you a expert based on your project topic and industry. Discuss every details with the expert</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="process-step">
-                    <h3>03</h3>
-                    <p><strong>Make the Payment</strong></p>
-                    <p>We will share the final invoice of the project based on the work. You can make the payment via multiple payment option.</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="process-step">
-                    <h3>04</h3>
-                    <p><strong>Work Delivery</strong></p>
-                    <p>Your work will be delivered to you on the agreed time for your project. The expert will be in touch with you during the project.</p>
-                </div>
-            </div>
-        </div>
+
+
+{% endblock %} {% block contant %}
+<body
+  style="
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff;
+  "
+>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h5 class="text-uppercase">Admission</h5>
+        <h1 class="header-title" style="font-size: 4rem">Want to start?</h1>
+        <h1 class="header-subtitle" style="margin-top: -2%; font-size: 4rem">
+          Meet our Expert
+        </h1>
+        <p class="header-description">
+          Thank you for your interest in Writex Services. We are glad to have
+          you here. You can easily start your project with us by following easy
+          simple steps mentioned below.
+        </p>
+        <a href="#" class="project-button">
+          <span class="icon"><i class="fas fa-sign-in-alt"></i></span>
+          <span class="text">Start Your Project</span>
+        </a>
+      </div>
     </div>
-
-
-        <div class="form-part">
-         <div class="container2">
-          <div class="dropzone">
-           <h4>
-            Drag &amp; Drop Files Here
-           </h4>
-           <p>
-            or
-            <a href="#">
-             Browse Files
-            </a>
-           </p>
-           <div class="file-count">
-            0 of 10
-           </div>
-          </div>
-          <div class="text-center mb-3">
-           OR
-          </div>
-          <div class="mb-3">
-           <label class="form-label" for="projectDescription">
-            Project Description
-           </label>
-           <textarea class="form-control" id="projectDescription" rows="5"></textarea>
-          </div>
-          <div class="mb-3">
-           <label class="form-label" for="name">
-            Name*
-           </label>
-           <input class="form-control" id="name" type="text"/>
-          </div>
-          <div class="mb-3">
-           <label class="form-label" for="email">
-            Email*
-           </label>
-           <input class="form-control" id="email" type="email"/>
-          </div>
-          <div class="mb-3">
-           <label class="form-label" for="phone">
-            Phone
-           </label>
-           <div class="input-group">
-            <span class="input-group-text">
-             <img alt="Flag of the United States" height="20" src="https://storage.googleapis.com/a1aa/image/ykwGLxedagUuYiHUaoPDuiWQX1k0yMPd1l0wVhcgX0lufFJUA.jpg" width="20"/>
-            </span>
-            <input class="form-control" id="phone" placeholder="+1" type="text"/>
-           </div>
-          </div>
-          <button class="btn btn-submit" type="submit">
-           Submit
-          </button>
-         </div>
+    <div class="divider h-50 mt-5"></div>
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <h2 class="process-title">THE PROCESS</h2>
+      </div>
+      <div class="col-md-3">
+        <div class="process-step">
+          <h2>01</h2>
+          <h3><strong>Submit Project Details</strong></h3>
+          <p>
+            You need to submit all the details of your project in the desired
+            format(PSD, Word XL)
+          </p>
         </div>
+      </div>
+      <div class="col-md-3">
+        <div class="process-step">
+          <h2>02</h2>
+          <h3><strong>Get on a Call with Expert</strong></h3>
+          <p>
+            We will assign you a expert based on your project topic and
+            industry. Discuss every details with the expert
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="process-step">
+          <h2>03</h2>
+          <h3><strong>Make the Payment</strong></h3>
+          <p>
+            We will share the final invoice of the project based on the work.
+            You can make the payment via multiple payment option.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="process-step">
+          <h2>04</h2>
+          <h3><strong>Work Delivery</strong></h3>
+          <p>
+            Your work will be delivered to you on the agreed time for your
+            project. The expert will be in touch with you during the project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <a 
-        href="#" 
-        style="
-          position: fixed; 
-          bottom: 20px; 
-          right: 20px; 
-          background-color: #25d366; 
-          color: white; 
-          font-family: Arial, sans-serif; 
-          font-size: 16px; 
-          font-weight: 500; 
-          padding: 10px 20px; 
-          border-radius: 25px; 
-          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
-          display: flex; 
-          align-items: center; 
-          cursor: pointer; 
-          text-decoration: none;"
-      >
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-          alt="WhatsApp Icon" 
-          style="width: 20px; height: 20px; margin-right: 10px;"
+  <div class="form-part">
+    <div class="container2">
+      <div class="dropzone">
+        <h4>Drag &amp; Drop Files Here</h4>
+        <p>or <a href="#">Browse Files</a></p>
+        <div class="file-count">0 of 10</div>
+      </div>
+      <div class="text-center mb-3">OR</div>
+      <div class="mb-3">
+        <label class="form-label" for="projectDescription"
+          >Project Description</label
         >
-        Hi, how can We help?
-      </a>
+        <textarea
+          class="form-control"
+          id="projectDescription"
+          rows="5"
+        ></textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="name">Name*</label>
+        <input class="form-control" id="name" type="text" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="email">Email*</label>
+        <input class="form-control" id="email" type="email" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="phone">Phone</label>
+        <input class="form-control" id="phone" type="tel" name="phone" required>
+    </div>
+    
+
+    <input class="btn btn-primary btn-submit" type="submit" value="Submit">
+    </div>
+  </div>
+
+
+  <div>
+    <section class="requirements-section">
+        <div class="requirements-container">
+            <div class="requirements-text">
+                <h1 class="requirements-title">Required Things for your project</h1>
+                <p class="requirements-description">
+                    In order for us to comprehend and proceed with your project, we require certain information. 
+                    Kindly assist us by providing the following details for improved clarity.
+                </p>
+                <button class="chat-button">Chat With Expert</button>
+            </div>
+            <div class="requirements-list">
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Project Details</li>
+                    <li><i class="fas fa-check-circle"></i> Necessary Project Files</li>
+                    <li><i class="fas fa-check-circle"></i> Timeline</li>
+                    <li><i class="fas fa-check-circle"></i> Selected Topic</li>
+                    <li><i class="fas fa-check-circle"></i> Development History</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+  </div>
+
+  <a
+    href="#"
+    style="
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 10px 20px;
+      border-radius: 25px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+    "
+  >
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt="WhatsApp Icon"
+      style="width: 20px; height: 20px; margin-right: 10px"
+    />
+    Hi, how can We help?
+  </a>
+ 
+ 
+
 </body>
-        
-           
-{% endblock  %}
+
+{% endblock %}

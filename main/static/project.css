@@ -53,17 +53,28 @@
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: 20px;
+    margin-bottom: 3%;
+
 }
 .process-step {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    text-align: center;
+    text-align:left;
     margin-bottom: 20px;
+    height: 90%;
+    border-color: black;
 }
+.process-step h2 {
+    font-size: 3rem;
+    color: black;
+    font-weight:600;
+}
+
 .process-step h3 {
-    font-size: 2rem;
-    color: #333;
+    font-size: 1.2rem;
+    color: rgb(29, 26, 26);
+    font-weight:400;
 }
 .process-step p {
     color: #666;
@@ -81,7 +92,8 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-color: #f8f9fa;
+        background-color: white;
+        margin: 10%;
 }
 .container2 {
     max-width: 500px;
@@ -113,8 +125,100 @@
 .form-control {
     margin-bottom: 20px;
 }
-.btn-submit {
-    background-color: #007bff;
-    color: #fff;
+.iti {
     width: 100%;
+}
+
+.iti__country-list {
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.btn-submit {
+    
+    width: 100%;
+
+}
+
+
+
+.requirements-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f2f1f0;
+}
+
+.requirements-container {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;  /* Use the entire width of the page */
+    padding: 50px;
+    background: #f2f1f0;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;  /* Space out the two halves */
+}
+
+.requirements-text {
+     /* Makes sure it takes full width of the left half */
+    text-align: left; /* Ensures text alignment is fully to the left */
+}
+.requirements-text, .requirements-list {
+    width: 50%;  /* Each takes half of the container */
+    padding: 20px;
+}
+
+
+.requirements-title {
+    font-size: 2.8rem;
+    color: #8B5D5D;
+    font-weight: bold;
+}
+
+.requirements-description {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.chat-button {
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+.chat-button:hover {
+    background-color: #333;
+}
+
+.requirements-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.requirements-list li {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.requirements-list i {
+    color: black;
+    margin-right: 10px;
+    font-size: 1.2rem;
 }
