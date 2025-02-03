@@ -1,4 +1,68 @@
 {% extends 'market.html' %}
+{% load static %}
 {% block title %}
 <title>entertainment</title>
+{% endblock  %}
+
+{% block link %}
+<link rel="stylesheet" href="{%static "services.css"%}">
+<link rel="stylesheet" href="{%static "entertainment.css"%}">
+{% endblock  %}
+{% block heading %}
+<h1>Entertainment </h1>
+<p>WriteX produces engaging and creative content that captivates audiences and enhances the entertainment experience.</p>
+{% endblock  %}
+{% block process %}
+<p>WriteX is a leading content writing company that specializes in providing high-quality writing services to the entertainment industry. With a team of experienced writers who understand the nuances of the industry, WriteX produces engaging and creative content that captivates audiences and enhances the entertainment experience. From movie scripts to TV show ideas, WriteX offers customized writing services tailored to the specific needs and preferences of its clients. With a commitment to delivering original, plagiarism-free content, WriteX is the go-to choice for any entertainment industry project.</p>
+{% endblock  %}
+
+{% block  card %}
+<div class="card-grid">
+    <div class="card">
+      <h1>Academic Writing  </h1>
+      <p>WriteX offers high-quality writing assistance for students who require help with their academic assignments. Our team of experienced writers specializes in various fields of study and is committed to delivering original, well-researched papers that meet the highest academic standards. We guarantee timely delivery and affordable prices, ensuring that students receive the support they need to succeed academically. </p>
+    </div>
+    <div class="card">
+      <h1>Ghost Writing </h1>
+      <p>Our ghostwriting service provides confidential and professional writing assistance for clients who need assistance with their literary or academic projects. Our experienced writers can help you bring your ideas to life while maintaining your voice and style. We offer a range of services, from book writing to academic research papers, and guarantee complete confidentiality throughout the process. Our goal is to help you achieve your writing goals while providing a seamless and stress-free experience. </p>
+    </div>
+    <div class="card">
+      <h1>Video Games Script</h1>
+      <p>Our team of writers crafts captivating narratives for video games, working closely with clients to understand their objectives and create customized content. Our services include dialogue, scriptwriting, character development, and world-building to enhance your gaming experience. With us, expect high-quality writing that elevates your video game and makes it a success. </p>  
+    </div>
+    <div class="card">
+      <h1>Storyboard Writing </h1>
+      <p>Storyboards are an essential tool for visualizing a story and planning the shots and sequences for film, animation, and video games. Our experienced team of writers creates detailed and comprehensive storyboards that bring the script to life, providing a visual roadmap for the production team </p>
+    </div>
+    <div class="card">
+      <h1>Columns  </h1>
+      <p>We offer expert column writing for newspapers, magazines, and online publications. Our team of experienced writers delivers captivating and informative columns on various topics, stimulating conversation and engaging readers. Trust us to enhance your publication with high-quality column writing services. </p>  
+    </div>
+    <div class="card">
+      <h1>Journals </h1>
+      <p>Journal writing is an effective tool for reflection, self-awareness, and personal growth. Our experienced team of writers provides customized journal writing solutions that cater to the specific needs and preferences of our clients. Our journal writing services are tailored to enhance personal growth, emotional wellbeing, and mindfulness.</p>
+    </div>
+  </div>
+{% endblock  %}
+
+{% block if_need %}
+<div class="featured">
+  <div class="container">
+      <h2>Our top featured services</h2>
+      <div class="services">
+          <div class="column">
+              <div class="service-item">📜 Film Script</div>
+              <div class="service-item">📜 Youtube Video Script</div>
+              <div class="service-item">🎙️ Podcast Intro</div>
+              <div class="service-item">📺 TV Commercial Scripts</div>
+          </div>
+          <div class="column">
+              <div class="service-item">📝 Interview Questionnaire</div>
+              <div class="service-item">🎬 Movie Reviews</div>
+              <div class="service-item">📜 Screenplays</div>
+              <div class="service-item">📖 Plot Summaries</div>
+          </div>
+      </div>
+  </div>
+</div>
 {% endblock  %}

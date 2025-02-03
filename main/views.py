@@ -25,6 +25,9 @@ def market(request):
 def education(request):
     return render(request,'education.html')
 
+def travel(request):
+    return render(request,'travel.html')
+
 def health(request):
     return render(request,'health.html')
 
