@@ -34,6 +34,9 @@ def health(request):
 def entertainment(request):
     return render(request,'entertainment.html')
 
+def travel(request):
+    return render(request,'travel.html')
+
 def legal(request):
     return render(request,'legal.html')
 
