@@ -12,6 +12,7 @@ urlpatterns = [
     path('education/', views.education,name='education'),
     path('health/', views.health,name='health'),
     path('entertainment/', views.entertainment,name='entertainment'),
+    path('travel/', views.travel,name='travel'),
     path('legal/', views.legal,name='legal'),
     path('corporate/', views.corporate,name='corporate'),
     path('finance/', views.finance,name='finance'),
