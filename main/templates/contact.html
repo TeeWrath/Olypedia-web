@@ -5,12 +5,15 @@
 {% endblock  %}
 
 {% block contant %}
+<body
+style="background-color: #fff;">
+
 
 <!-- Header Section -->
 <section style="
     padding: 50px 0;
-    text-align: center;
-    background-color: #f9f4eb;
+    text-align: left;
+    background-color: #ffffff;
     color: #6c4a4a;
 ">
     <div style="
@@ -19,12 +22,14 @@
         margin: 0 auto;
     ">
         <h1 style="
-            font-size: 3rem;
+            font-size: 3.1rem;
             margin-bottom: 15px;
-        ">Want to connect with our experts?</h1>
+            font-weight: bolder;
+            color: #965d62;
+        ">Want to connect with <br>our experts?</h1>
         <p style="
             font-size: 1.2rem;
-        ">Please contact us with any of your queries or problems, our team of experts will be happy to guide you.</p>
+        ">Please contact us with any of your queries or problems,<br> our team of experts will be happy to guide you.</p>
     </div>
 </section>
 
@@ -33,14 +38,18 @@
     margin-top: 30px;
 ">
     <div style="
+    background-color: #ffffff;
         width: 90%;
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
     ">
-        <div style="
+        <div    style="display:flex ;
+        flex-direction: column;">
+            <div style="
             flex: 1;
             min-width: 300px;
         ">
@@ -84,19 +93,27 @@
                 color: inherit;
             ">customer@writex.co.in</a></p>
         </div>
+        </div>
+        <div
+        style=" flex: 1;">
+            <section style="
+            text-align: center;
+            margin: 30px 0;
+        ">
+            <img src="{% static 'images/customercare.png' %}" alt="Customer Support Illustration" style="
+                
+               max-width: 500px;
+                height: auto;
+            ">
+        </section>
+
+        </div>
+        
     </div>
 </section>
 
 <!-- Illustration Section -->
-<section style="
-    text-align: center;
-    margin: 30px 0;
-">
-    <img src="{% static 'images/customercare.png' %}" alt="Customer Support Illustration" style="
-        max-width: 300px;
-        height: auto;
-    ">
-</section>
+
 
 <!-- Additional Information Section -->
 <section style="
@@ -298,4 +315,5 @@
     >
     Hi, how can We help?
   </a>
-{% endblock  %}
+</body>
+  {% endblock  %}
