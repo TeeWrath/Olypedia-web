@@ -1,4 +1,114 @@
-{% extends 'market.html' %}
-{% block title %}
-<title>legal</title>
-{% endblock  %}
+{% extends 'layout.html' %} {% load static %} {% block link %}
+<link rel="stylesheet" href="{%static 'legal.css'%}" />
+{% endblock %} {% block contant %}
+<body>
+  <div class="market">
+    <div class="left">
+      <h1>Legal</h1>
+      <p>
+        Writex provides scholarly and research-based writing assistance to
+        students and scholars, helping them to produce high-quality papers,
+        essays, and theses.
+      </p>
+    </div>
+    <div class="img">
+      <img src="{% static "images/legal.png"%}" alt="Illustration">
+    </div>
+  </div>
+  <hr
+    style="
+      width: 900px;
+      margin: 80px auto;
+      border: 0;
+      border-top: 2px solid white;
+    "
+  />
+  <div class="process">
+    <div class="inner">
+      <h6>The Process</h6>
+      <p>
+        Writex offers expert writing solutions to law firms, corporations, and
+        individuals. These services include drafting and reviewing legal
+        documents such as contracts, briefs, and motions, researching and
+        analyzing legal issues, creating legal marketing materials, and
+        developing legal content for websites and publications. With a team of
+        experienced legal writers, editors, and attorneys, we can ensure that
+        our clients’ content is accurate, clear, and concise. By leveraging the
+        expertise in legal writing and research, we can help clients to navigate
+        complex legal issues and communicate their message effectively.
+      </p>
+    </div>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <h1>Legal Briefs</h1>
+      <p>
+        Providing legal brief services to law firms, businesses, and
+        individuals. Our team of legal experts has extensive experience in
+        researching and writing compelling briefs for a wide range of legal
+        issues. We understand the importance of a well-crafted legal brief in
+        winning cases and strive to deliver high-quality work within tight
+        deadlines.
+      </p>
+    </div>
+    <div class="card">
+      <h1>Contracts</h1>
+      <p>
+        Writex offers regulatory writing services that produce top-quality
+        documents meeting the guidelines and standards of the pharmaceutical and
+        medical device industries. Their services cover various documents like
+        clinical trial reports, study protocols, regulatory submission dossiers,
+        and labeling documents. Their team comprises experienced medical
+        writers, editors, and regulatory experts who can guide clients through
+        complex regulatory requirements and ensure compliance with international
+        regulations.
+      </p>
+    </div>
+    <div class="card">
+      <h1>Memorandums</h1>
+      <p>
+        Our legal experts are dedicated to crafting clear and concise legal
+        analysis and advice for law firms, corporations, and individuals. Our
+        services include researching and analyzing legal issues, preparing legal
+        opinions, and drafting legal memoranda.
+      </p>
+    </div>
+  </div>
+  <div class="card-grid2">
+    <div class="card">
+      <h1>Motions</h1>
+      <p>
+        We offers a range of legal writing services, including motions content
+        writing. Whether it's drafting a motion to dismiss, a motion for summary
+        judgment, or any other type of motion, their writers can help clients
+        achieve their legal objectives. We understand the importance of clear
+        and concise legal writing and work diligently to ensure that their
+        clients receive top-quality motions that stand out in court.
+      </p>
+    </div>
+    <div class="card">
+      <h1>Deeds</h1>
+      <p>
+        We provide specialized service in drafting legal documents that transfer
+        ownership of property or assets from one person to another. Our service
+        includes drafting deeds for real estate transactions, creating contracts
+        for the sale or transfer of business assets, and preparing legal
+        documents for estate planning purposes.
+      </p>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="contact-section">
+      <h1>Get in touch with our <span class="highlight">Experts</span></h1>
+      <a
+        href="https://wa.me/your-number"
+        target="_blank"
+        class="whatsapp-button"
+        >💬 WhatsApp</a
+      >
+    </div>
+  </div>
+</body>
+{% endblock %}
