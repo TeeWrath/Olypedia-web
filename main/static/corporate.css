@@ -47,7 +47,7 @@ body{
     margin-bottom: 60px;
   }
  .inner{
-    max-width:62vw;
+    max-width:65vw;
 
  }
  .inner h6{
@@ -64,7 +64,7 @@ body{
   grid-template-columns: repeat(3,1fr);
   gap: 20px;
   padding: 20px;
-  max-width:95vw;
+  max-width:65vw;
   margin: auto;
 }
 
@@ -73,7 +73,7 @@ body{
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
     padding: 20px;
-    max-width:95vw;
+    max-width:65vw;
     margin: auto;
   }
 .card {

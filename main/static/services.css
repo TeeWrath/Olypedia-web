@@ -1,7 +1,10 @@
-    .home-header {
+
+    .default-body{
+      background-color: white;
+    }
+    .market-body{
       background-color: #f9f4eb;
     }
-
     .market {
       display: flex;
       justify-content: center;
@@ -78,7 +81,7 @@
     }
 
     .card:hover {
-      background-color: rgb(233, 179, 79);
+      background-color:#f9f4eb;
     }
 
     .card h1 {

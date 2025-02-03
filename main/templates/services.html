@@ -3,10 +3,10 @@
 {% block link %}
 <link rel="stylesheet" href="{%static "services.css"%}">
 {% endblock  %}
-{% block header_class %}market-header{% endblock %}
+
 
 {% block contant %}
-
+<body class=" {% block body_class %}default-body{% endblock %}">
 <div class="market">
     <div class="left">
       {% block heading %}
@@ -62,5 +62,5 @@
   </div>
 </div>
 {% endblock  %}
-
+</body>
 {% endblock  %}

@@ -19,7 +19,9 @@ body {
   .home-header{
     background-color: #f9f4eb;
   }
-  
+  .market-header{
+    background-color: #f9f4eb;
+  }
   .logo img {
     height: 50px;
     margin-top: -10px;
