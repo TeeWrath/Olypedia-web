@@ -1,4 +1,121 @@
-{% extends 'market.html' %}
-{% block title %}
-<title>finance</title>
-{% endblock  %}
+{% extends 'layout.html' %} {% load static %} {% block link %}
+<link rel="stylesheet" href="{%static 'legal.css'%}" />
+{% endblock %} {% block contant %}
+<body>
+  <div class="market">
+    <div class="left">
+      <h1>Finance</h1>
+      <p>
+        Offer clear and concise financial content for businesses and financial
+        institutions, providing expert insights and analysis on complex
+        financial topics.
+      </p>
+    </div>
+    <div class="img">
+      <img src="{% static "images/finance.png"%}" alt="Illustration">
+    </div>
+  </div>
+  <hr
+    style="
+      width: 900px;
+      margin: 80px auto;
+      border: 0;
+      border-top: 2px solid white;
+    "
+  />
+  <div class="process">
+    <div class="inner">
+      <h6>The Process</h6>
+      <p>
+        Financial writing is a crucial aspect of any business, as it plays a key
+        role in communicating important financial information to stakeholders.
+        At Writex, we specialize in providing comprehensive financial writing
+        services that help businesses effectively communicate their financial
+        story. Our team of experienced financial writers can create informative
+        and engaging financial reports, prospectuses, and other financial
+        documents that accurately reflect your business’s financial performance
+        and goals.
+      </p>
+    </div>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <h1>Finance Reports</h1>
+      <p>
+        Writex is your trusted partner for creating effective company memos for
+        your corporate needs. Our team of experienced writers and editors can
+        help you craft concise and compelling memos that convey important
+        information to your employees in a clear and concise manner. Trust us to
+        deliver high-quality, well-written, and engaging memos that keep your
+        employees informed and aligned with your business goals
+      </p>
+    </div>
+    <div class="card">
+      <h1>News Letters</h1>
+      <p>
+        We provide comprehensive newsletter content writing services that are
+        specifically tailored to meet the needs of your business. Our team of
+        skilled writers can create engaging and informative newsletters that
+        keep your audience up-to-date with the latest news and information. Let
+        us help you establish your brand as a thought leader in your industry
+        and engage your target audience with high-quality, well-crafted
+        newsletters.
+      </p>
+    </div>
+    <div class="card">
+      <h1>Annual Reports</h1>
+      <p>
+        An annual report is an essential document that outlines a company's
+        financial performance, achievements, and goals over the past year. At
+        Writex, we understand the importance of crafting an annual report that
+        effectively communicates your business's story and accomplishments to
+        your stakeholders. Our team of experienced writers, editors, and
+        designers can help you create a comprehensive annual report that is
+        tailored to your specific needs and aligns with your brand's messaging.
+        We work closely with our clients to ensure that the report accurately
+        reflects their business's performance, goals, and values, and is
+        delivered in a visually appealing and engaging format.
+      </p>
+    </div>
+  </div>
+  <div class="card-grid2">
+    <div class="card">
+      <h1>Presentation</h1>
+      <p>
+        Writex offers top-notch presentation design services for corporate
+        clients. Our team of expert designers can create compelling and visually
+        stunning presentations that captivate your audience and effectively
+        communicate your message. We specialize in creating presentations that
+        align with your brand's messaging and resonate with your audience. Let
+        us help you create a high-impact presentation that makes a lasting
+        impression on your stakeholders.
+      </p>
+    </div>
+    <div class="card">
+      <h1>Brochure</h1>
+      <p>
+        We provide exceptional brochure design services for corporate clients.
+        Our team of expert designers can create visually stunning brochures that
+        effectively communicate your business's message and showcase your
+        products or services. We specialize in creating brochures that align
+        with your brand's messaging and resonate with your target audience. Let
+        us help you create a high-quality brochure that leaves a lasting
+        impression on your stakeholders.
+      </p>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="contact-section">
+      <h1>Get in touch with our <span class="highlight">Experts</span></h1>
+      <a
+        href="https://wa.me/your-number"
+        target="_blank"
+        class="whatsapp-button"
+        >💬 WhatsApp</a
+      >
+    </div>
+  </div>
+</body>
+{% endblock %}
