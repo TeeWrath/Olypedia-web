@@ -1,0 +1,107 @@
+{% extends 'layout.html' %} {% load static %} {% block link %}
+<link rel="stylesheet" href="{%static 'travel.css'%}" />
+{% endblock %} {% block contant %}
+<body>
+  <div class="market">
+    <div class="left">
+      <h1>Travel</h1>
+      <p>
+        Provide compelling and informative content for travel companies,
+        destinations, and publications, inspiring and informing travelers about
+        various destinations and experiences.
+      </p>
+    </div>
+    <div class="img">
+      <img src="{% static "images/corporate.png"%}" alt="Illustration">
+    </div>
+  </div>
+  <hr
+    style="
+      width: 900px;
+      margin: 80px auto;
+      border: 0;
+      border-top: 2px solid white;
+    "
+  />
+  <div class="process">
+    <div class="inner">
+      <h6>The Process</h6>
+      <p>
+        Writex offer exceptional content writing services to the travel
+        industry. Our team of skilled writers can create compelling and
+        informative content that captures the essence of your travel business
+        and helps you connect with your audience. From blog posts and
+        destination guides to travel tips and social media content, we
+        specialize in creating content that engages and inspires your target
+        audience. Let us help you showcase your travel business in the best
+        possible light and establish your brand as a thought leader in the
+        travel industry.
+      </p>
+    </div>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <h1>Travel Blogs</h1>
+      <p>
+        Writex specializes in crafting engaging travel blog content for
+        businesses in the travel industry. Our team of experienced travel
+        writers can create high-quality blog posts that showcase your
+        destination, highlight unique experiences, and provide valuable travel
+        advice. We work closely with our clients to ensure that the content
+        aligns with their brand's messaging and resonates with their target
+        audience. Trust us to deliver compelling and informative travel blog
+        content that helps you establish your brand as a go-to resource for
+        travel information.
+      </p>
+    </div>
+    <div class="card">
+      <h1>Travel Guide Book</h1>
+      <p>
+        Travel guide books are an essential resource for travelers looking to
+        explore new destinations. At Writex we specialize in providing
+        exceptional travel guide book writing services to businesses in the
+        travel industry. Our team of experienced writers can create
+        comprehensive and informative guide books that showcase the unique
+        features and attractions of your destination.
+      </p>
+    </div>
+    <div class="card">
+      <h1>Website Content</h1>
+      <p>
+        In today's digital age, having a well-crafted and engaging travel
+        website is essential for businesses in the travel industry. At Writex,
+        we specialize in providing exceptional travel website content writing
+        services that help businesses stand out from the crowd. Our team of
+        experienced writers can create compelling website content that showcases
+        your destination, highlights unique experiences, and provides valuable
+        travel advice.
+      </p>
+    </div>
+
+    <div class="card">
+      <h1>Email Newsletters</h1>
+      <p>
+        Email newsletters are an effective way to keep your audience engaged and
+        up-to-date with the latest news and offers from your travel business. At
+        Writex, we provide email newsletter writing services for businesses in
+        the travel industry. Our team of experienced writers can create engaging
+        and informative newsletters that showcase your destination, highlight
+        unique experiences, and promote your travel packages and services
+      </p>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="contact-section">
+      <h1>Get in touch with our <span class="highlight">Experts</span></h1>
+      <a
+        href="https://wa.me/your-number"
+        target="_blank"
+        class="whatsapp-button"
+        >💬 WhatsApp</a
+      >
+    </div>
+  </div>
+</body>
+{% endblock %}
