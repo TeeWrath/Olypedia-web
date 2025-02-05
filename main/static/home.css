@@ -141,7 +141,7 @@ btn-outline-primary {
   }
   .card{
     border-radius:15px;
-    height: 475px;
+  
     width: 357px;
     background-color:rgb(254, 254, 254);
     display: flex;
